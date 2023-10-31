@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Moore - Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a5121d40c8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/Logo_SM_2.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Senior Producer</p>
+                    <h1>Hi, I'm <span>Simon Moore</span><br> from Birmingham, UK</h1>
+                </div>
+            </div>
+        </div>
+        <!--------------------- about --------------------------> 
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/SM.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Results-driven professional Producer and Project Manager with 10+ years of 
+                    experience managing large, multi-faceted video productions as well as 
+                    multimedia events both in the UK and overseas. Ability to successfully 
+                    oversee multiple shoots while managing tight schedules, budgets/costs and 
+                    engaging with various production stakeholders. Track record of producing 
+                    highly engaging, thought-provoking content by utilising technical innovations 
+                    and team creativity. Experienced in effectively recruiting, training/mentoring 
+                    and managing specialised crew members including editors, animators and camera 
+                    operators. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Budget & Cost Management</span>
+                            <!-- <br>Managing budgets upto £250k</li> -->
+                        <li><span>Stakeholder/Client Engagement</span>
+                            <!-- <br>Internal and client side</li> -->
+                        <li><span>Project Management</span>
+                            <!-- <br>Waterfall and Agile methodologies</li> -->
+                        <li><span>Content Development/Creation</span><br>
+                        <li><span>Leadership, Training & Coaching</span><br>
+                        <li><span>Multi-Team Collaboration</span><br>
+                        <li><span>Professional Networking</span><br>
+                        <li><span>Content Development/Creation</span><br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Jul. 2023 - Current</span><br>Freelance Producer</li>
+                        <li><span>Jul. 2022 - Jul. 2023</span><br>Senior Producer at 33RED Films</li>
+                        <li><span>Nov. 2017 - Jul. 2022</span><br>Freelance Producer, Editor & Camera Operator</li>
+                        <li><span>Sep. 2011 - Nov. 2017</span><br>Producer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Editing</span><br>Craft Editing - NFTS</li>
+                        <li><span>Animation</span><br>Advanced Adobe After Effects - Soho Editors</li>
+                        <li><span>Sustainability</span><br>Sustainable Production Training - AdGreen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </div>
+  </div>  
+<!---------------------------- services ------------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque accusantium 
+                    tempore nesciunt sint voluptatem vitae autem voluptatibus modi, ullam voluptate 
+                    ut nam incidunt exercitationem aliquam qui alias mollitia pariatur!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque accusantium 
+                    tempore nesciunt sint voluptatem vitae autem voluptatibus modi, ullam voluptate 
+                    ut nam incidunt exercitationem aliquam qui alias mollitia pariatur!</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque accusantium 
+                    tempore nesciunt sint voluptatem vitae autem voluptatibus modi, ullam voluptate 
+                    ut nam incidunt exercitationem aliquam qui alias mollitia pariatur!</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+  </body>
+</html>
