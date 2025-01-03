@@ -1,0 +1,116 @@
+:root {
+    --bg-body: #000000;
+    --bg-contact: #808080;
+    --accent: #a27879;
+    --text: #fff;
+    --invalid: #955656;
+    --accent2: #3e6460;
+    --container: 69.375rem;
+}
+
+html {
+    /* box-sizing: border-box;
+    font-size: 100%; */
+}
+
+body {
+    margin: 0;
+    font-family: 'Avenir', sans-serif;
+    color: var(--text);
+    background-color: var(--bg-body);
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.wrapper {
+    width: calc(100% - 2rem);
+    max-width: var(--container);
+    margin-inline: auto;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 20px;
+}
+
+.container {
+    float: right;
+    display: flex; 
+    /* justify-content: flex-end; */
+    list-style-type: none;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+}
+
+.container li {
+    padding: 0 0 0 5rem;
+    color: #fff;
+}
+
+.hero {
+    display: inline;
+}
+
+#about {
+    font-size: 50px;
+    margin: 20px;
+}
+
+.bio {
+    margin: 20px;
+    font-size: 20px;
+}
+
+#sm {
+    float: right;
+    margin: 130px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    max-width: 300px;
+    max-height: 300px;  
+}
+
+#work {
+    margin: 20px;
+    font-size: 30px;
+    display: block;
+}
+
+#hor {
+    max-width: 100%;
+    margin: 
+}
+
+.future {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact {
+    margin: 20px;
+}
+
+.aside {
+    float: right;
+    display: flex; 
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 190px;
+    margin-top: -65px;
+    margin-bottom: -20px;
+    padding: 10px;
+}
+
+.aside li {
+    padding: 0 0 0 5rem;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media screen and (min-width:480px)
